@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: white;
+    animation: transitionIn 0.9s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+div {
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+li,
+a,
+button {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #f96c26;
+}
+
+button {
+    padding: 7px 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all 0.3s ease 0s;
+    background-color: rgba(249, 108, 38, 0.8);
+}
+.welcome-message p,
+.resource-container,
+.about-container p,
+.feedback-container p {
+    text-align: center;
+    line-height: 2;
+}
+
+.welcome-message p {
+    font-size: 17px;
+}
+
+.welcome-message h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.welcome-list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.welcome-list h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.date-list ul {
+    display: inline-block;
+    list-style: none;
+    margin: 15px;
+}
+
+.date-list li {
+    margin: 5px;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+}
+
+.contact-container h3 {
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    line-height: 2.5;
+}
+
+.contact-container a:hover {
+    transition: all 0.3s ease 0s;
+    color: #f96c26;
+}
+
+.social-media-container {
+    margin: 40px 40px 40px 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media-logo:hover {
+    transition: all 0.3s ease 0s;
+    opacity: 0.6;
+}
+
+.girl-logo-container,
+.study-logo-container {
+    text-align: center;
+}
+
+.girl-logo,
+.study-logo {
+    width: 430px;
+    height: 240px;
+    margin: auto;
+}
+
+.html-link,
+.css-link {
+    color: rgba(0, 49, 227, 1);
+}
+
+.html-link:hover,
+.css-link:hover {
+    transition: all 0.3s ease 0s;
+    color: rgba(0, 49, 227, 0.7);
+}
+
+.welcome-container h1 {
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    margin: 15px;
+}
+
+.register {
+    display: inline;
+    font-size: 30px;
+}
+
+.register:hover {
+    transition: all 0.3s ease 0s;
+    color: #f96c26;
+}
+
+.link-container {
+    margin: 20px;
+}
+
+.link-container p {
+    margin: 10px;
+}
+
+.about-container p {
+    margin: 15px 15px 10px 15px;
+}
+
+.feedback-container p {
+    margin: 15px 15px 15px 15px;
+}
+
+.about-logo-container {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.html-logo {
+    width: 160px;
+    height: 160px;
+}
+
+.css-logo {
+    width: 115px;
+    height: 160px;
+}
+
+.github-logo {
+    width: 125px;
+    height: 125px;
+}
+
+.circle-project:hover {
+    transition: all 0.3s ease 0s;
+    color: #f96c26;
+}
+
+Footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+iframe {
+    margin-bottom: 50px;
+}
