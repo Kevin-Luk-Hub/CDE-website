@@ -181,16 +181,13 @@ button:hover {
     margin: 0.5em;
 }
 
-.girl-logo-container,
-.study-logo-container {
+.girl-logo-container {
     text-align: center;
 }
 
-.girl-logo,
-.study-logo {
+.girl-logo {
     width: 430px;
     height: 240px;
-    margin: auto;
 }
 
 .register-link {
@@ -283,9 +280,9 @@ button:hover {
     text-align: center;
 }
 
-iframe {
+/* iframe {
     margin-bottom: 1.5em;
-}
+} */
 
 /* --------------- Contact --------------- */
 
@@ -317,6 +314,13 @@ iframe {
         height: 60px;
         width: 90px;
     }
+
+    .girl-logo {
+        /* width: 70%;
+        height: 20%; */
+        width: 235px;
+        height: 150px;
+    }
     
     .toggle-button {
         display: flex;
@@ -345,5 +349,20 @@ iframe {
     .nav-links.active {
         display: flex;
         animation: transitionIn 1.5s;
+    }
+
+    .html-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .css-logo {
+        width: 72px;
+        height: 100px;
+    }
+    
+    .github-logo {
+        width: 90px;
+        height: 90px;
     }
 }
