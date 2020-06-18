@@ -7,9 +7,23 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 :root {
     --primary-color: rgba(255, 255, 255, 1)
     --overlay-color: rgba(0, 0, 0, 0.3) 
+}
+
+footer {
+    margin-top: auto;
 }
 
 @keyframes transitionIn {
@@ -26,6 +40,7 @@
 body {
     animation: transitionIn 0.9s;
     background-color: var(--primary-color);
+    position: relative;
     position: relative;
 }
 
@@ -57,7 +72,7 @@ button {
 } */
 
 .social-media-container {
-    margin: 1em 1em 1em 1em;
+    margin: 2em 1em 2em 1em;
     display: flex;
     justify-content: space-evenly;
 }
@@ -109,8 +124,8 @@ button {
 
 .toggle-button {
     position: absolute;
-    top: 4rem;
-    right: 4rem;
+    top: 3.25rem;
+    right: 2.5rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -144,14 +159,18 @@ button:hover {
 }
 
 .welcome-container h1 {
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
+    text-align: center;
 }
 
-.welcome-container p {
+.welcome-container a {
+    text-align: center;
     margin: 0.6em;
+    font-size: 1.55rem;
 }
 
 .welcome-message p {
+    text-align: center;
     font-size: 1.1rem;
 }
 
@@ -171,7 +190,7 @@ button:hover {
     text-align: center;
 }
 
-.date-list ul {
+.date-list-container ul {
     display: inline-block;
     list-style: none;
     margin: 1em;
@@ -309,7 +328,16 @@ button:hover {
 
 /* --------------- Media Queries--------------- */
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
+    .welcome-container, .welcome-message, .resource-container, .contact-container, .about-container, .feedback-container{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .welcome-list {
+        margin-bottom: 3em;
+    }
+
     .logo {
         height: 60px;
         width: 90px;
@@ -319,7 +347,7 @@ button:hover {
         /* width: 70%;
         height: 20%; */
         width: 235px;
-        height: 150px;
+        height: 140px;
     }
     
     .toggle-button {
@@ -346,9 +374,17 @@ button:hover {
         padding: 0.5rem 1rem;
     }
 
+    body {
+        position: relative
+    }
+
     .nav-links.active {
         display: flex;
+        align-items: center;
+        justify-content: center;
         animation: transitionIn 1.5s;
+        position: absolute;
+        z-index: 5;
     }
 
     .html-logo {
@@ -364,5 +400,10 @@ button:hover {
     .github-logo {
         width: 90px;
         height: 90px;
+    }
+
+    .about-logo-container {
+        margin-top: 1em;
+        margin-bottom: 5em;
     }
 }
