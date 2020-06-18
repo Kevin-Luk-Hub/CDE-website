@@ -8,40 +8,46 @@
             type="image/gif"
         />
         <link rel="stylesheet" href="./css/style.css" />
-        <title>Project</title>
+        <title>CDE Course</title>
     </head>
     <body>
-        <header>
-            <a href="https://undraw.co/illustrations" target="_blank">
-                <img
-                    src="./img/undraw_web_developer.png"
-                    alt="class logo"
-                    class="logo"
-                    height="100px"
-                    width="150px"
-                />
+        <nav class="nav-bar">
+            <div class="logo-container">
+                <a href="https://undraw.co/illustrations" target="_blank">
+                    <img
+                        src="./img/undraw_web_developer.png"
+                        alt="class logo"
+                        class="logo"
+                    />
+                </a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <nav>
-                <ul class="nav-links">
+            <div class="nav-links">
+                <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./resources.html">Resources</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <a class="contact" href="./contact.html">
-                <button>Contact</button>
-            </a>
-        </header>
+            </div>
+        </nav>
 
         <div class="welcome-container">
             <h1>Build Your Own Website!</h1>
-            <a
-                href="https://www.eventbrite.com/e/cde-circle-project-registration-weekly-registrations-registration-109040202180?aff="
-                target="_blank"
-            >
-                <p class="register">Click Here to Register</p>
-            </a>
+            <p class="register">
+                <a
+                    href="https://www.eventbrite.com/e/cde-circle-project-registration-weekly-registrations-registration-109040202180?aff="
+                    target="_blank"
+                    class="register-link"
+                >
+                    Click Here to Register
+                </a>
+            </p>
         </div>
 
         <div class="girl-logo-container">
@@ -132,5 +138,6 @@
             </a>
         </div>
         <!-- <footer>This website was created by Kevin Luk</footer> -->
+        <script src="./app.js"></script>
     </body>
 </html>

@@ -8,31 +8,34 @@
             type="image/gif"
         />
         <link rel="stylesheet" href="./css/style.css" />
-        <title>Project</title>
+        <title>CDE Course</title>
     </head>
     <body>
-        <header>
-            <a href="https://undraw.co/illustrations" target="_blank">
-                <img
-                    src="./img/undraw_web_developer.png"
-                    alt="class logo"
-                    class="logo"
-                    height="100px"
-                    width="150px"
-                />
+        <nav class="nav-bar">
+            <div class="logo-container">
+                <a href="https://undraw.co/illustrations" target="_blank">
+                    <img
+                        src="./img/undraw_web_developer.png"
+                        alt="class logo"
+                        class="logo"
+                    />
+                </a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <nav>
-                <ul class="nav-links">
+            <div class="nav-links">
+                <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./resources.html">Resources</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <a class="contact" href="./contact.html">
-                <button>Contact</button>
-            </a>
-        </header>
+            </div>
+        </nav>
 
         <div class="feedback-container">
             <h1 class="about-title">Feedback</h1>
@@ -43,9 +46,16 @@
                 improve our course and teaching abilites. We strive to make our
                 course the best experience possible for our students.
             </p>
+            <p>
+                Click this link to
+                <a href="https://forms.gle/Bs7idLkjKBx78Lp68" target="_blank">
+                    complete the survey
+                </a>
+                or complete it on this page.
+            </p>
         </div>
 
-        <div>
+        <div class="form-container">
             <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSecybjSofVsnn7MGvla6EuBgWXQaTvvrfzbZQc2i9Mt61LFag/viewform?embedded=true"
                 width="640"
@@ -58,5 +68,6 @@
             </iframe>
         </div>
         <!-- <footer>This website was created by Kevin Luk</footer> -->
+        <script src="./app.js"></script>
     </body>
 </html>
