@@ -15,11 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-}
-
-:root {
-    --primary-color: rgba(255, 255, 255, 1)
-    --overlay-color: rgba(0, 0, 0, 0.3) 
+    animation: transitionIn 0.9s;
 }
 
 footer {
@@ -37,14 +33,8 @@ footer {
     }
 }
 
-body {
-    animation: transitionIn 0.9s;
-    background-color: var(--primary-color);
-    position: relative;
-    position: relative;
-}
-
-li,a {
+li,
+a {
     text-decoration: none;
     color: black;
 }
@@ -177,36 +167,27 @@ li,a {
 }
 
 .welcome-body h2 {
-    margin-top: 0.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
     font-weight: 900;
     text-align: center;
 }
 
 .welcome-body h3 {
     text-align: center;
-    margin-top: 1.3em;
     font-size: 1.125rem;
-}
-
-.welcome-list {
-    margin-top: 1em;
-    text-align: center;
-}
-
-.welcome-list h3 {
-    margin-top: 1.5em;
-    text-align: center;
 }
 
 .date-list-container {
     text-align: center;
+    margin-top: 2em;
 }
 
 .date-list-container ul {
     text-align: center;
     display: inline-block;
     list-style: none;
-    margin: 1em;
+    margin: 0.5em 1em 1em 1em;
 }
 
 .date-list li {
@@ -334,7 +315,7 @@ li,a {
     .resource-container,
     .contact-container,
     .about-container,
-    .feedback-container{
+    .feedback-container {
         margin-left: 20em;
         margin-right: 20em;
     }
@@ -346,7 +327,7 @@ li,a {
     .resource-container,
     .contact-container,
     .about-container,
-    .feedback-container{
+    .feedback-container {
         margin-left: 7.5em;
         margin-right: 7.5em;
     }
@@ -358,19 +339,30 @@ li,a {
     .resource-container,
     .contact-container,
     .about-container,
-    .feedback-container{
+    .feedback-container {
         margin-left: 4.5em;
         margin-right: 4.5em;
     }
 }
 
 @media (max-width: 780px) {
+    @keyframes slide {
+        0% {
+            opacity: 1;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     .welcome-title,
     .welcome-body,
     .resource-container,
     .contact-container,
     .about-container,
-    .feedback-container{
+    .feedback-container {
         margin-left: 1.5em;
         margin-right: 1.5em;
     }
@@ -401,7 +393,7 @@ li,a {
         width: 235px;
         height: 140px;
     }
-    
+
     .toggle-button {
         display: flex;
     }
@@ -419,11 +411,13 @@ li,a {
     .nav-links ul {
         width: 100%;
         flex-direction: column;
+        margin-bottom: 2em;
+        border-bottom: 2px solid #d6d6d6;
     }
 
     .nav-links li {
         text-align: center;
-        padding: 0.5rem 1rem;
+        padding: 1rem 1rem;
     }
 
     body {
@@ -434,19 +428,18 @@ li,a {
         display: flex;
         align-items: center;
         justify-content: center;
-        animation: transitionSlideIn 1s;
     }
 
     .html-logo {
         width: 100px;
         height: 100px;
     }
-    
+
     .css-logo {
         width: 72px;
         height: 100px;
     }
-    
+
     .github-logo {
         width: 90px;
         height: 90px;
