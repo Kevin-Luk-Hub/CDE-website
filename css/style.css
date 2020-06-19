@@ -346,13 +346,11 @@ a {
 }
 
 @media (max-width: 780px) {
-    @keyframes slide {
+    @keyframes slideDown {
         0% {
-            opacity: 1;
-            transform: translateY(-20px);
+            transform: translateY(-80%);
         }
         100% {
-            opacity: 1;
             transform: translateY(0);
         }
     }
@@ -360,7 +358,6 @@ a {
     .welcome-title,
     .welcome-body,
     .resource-container,
-    .contact-container,
     .about-container,
     .feedback-container {
         margin-left: 1.5em;
@@ -420,14 +417,11 @@ a {
         padding: 1rem 1rem;
     }
 
-    body {
-        position: relative;
-    }
-
     .nav-links.active {
         display: flex;
         align-items: center;
         justify-content: center;
+        animation: slideDown 0.75s ease;
     }
 
     .html-logo {
