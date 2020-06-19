@@ -44,11 +44,7 @@ body {
     position: relative;
 }
 
-li,
-a,
-button {
-    font-size: 1.1rem;
-    font-weight: bold;
+li,a {
     text-decoration: none;
     color: black;
 }
@@ -105,6 +101,8 @@ button {
 
 .nav-links li a {
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 .nav-links li a:hover {
@@ -169,6 +167,10 @@ button {
     font-size: 1.1rem;
 }
 
+.circle-project {
+    font-weight: 900;
+}
+
 .circle-project:hover {
     transition: all 0.3s ease 0s;
     color: #f96c26;
@@ -176,6 +178,7 @@ button {
 
 .welcome-body h2 {
     margin-top: 0.5em;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -208,6 +211,7 @@ button {
 
 .date-list li {
     margin: 0.5em;
+    font-weight: bolder;
 }
 
 /* --------------- Resources --------------- */
@@ -225,6 +229,7 @@ button {
 .html-link,
 .css-link {
     color: rgba(0, 49, 227, 1);
+    font-weight: bolder;
 }
 
 .html-link:hover,
@@ -277,6 +282,10 @@ button {
     margin: 1em;
 }
 
+.feedback-container a {
+    font-weight: bolder;
+}
+
 .feedback-container a:hover {
     transition: all 0.3s ease 0s;
     color: #f96c26;
@@ -308,6 +317,10 @@ button {
     line-height: 2.5;
 }
 
+.contact-container a {
+    font-weight: bolder;
+}
+
 .contact-container a:hover {
     transition: all 0.3s ease 0s;
     color: #f96c26;
@@ -315,8 +328,49 @@ button {
 
 /* --------------- Media Queries--------------- */
 
+@media (max-width: 1920px) {
+    .welcome-title,
+    .welcome-body,
+    .resource-container,
+    .contact-container,
+    .about-container,
+    .feedback-container{
+        margin-left: 20em;
+        margin-right: 20em;
+    }
+}
+
+@media (max-width: 1440px) {
+    .welcome-title,
+    .welcome-body,
+    .resource-container,
+    .contact-container,
+    .about-container,
+    .feedback-container{
+        margin-left: 7.5em;
+        margin-right: 7.5em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .welcome-title,
+    .welcome-body,
+    .resource-container,
+    .contact-container,
+    .about-container,
+    .feedback-container{
+        margin-left: 4.5em;
+        margin-right: 4.5em;
+    }
+}
+
 @media (max-width: 780px) {
-    .welcome-title, .welcome-body, .resource-container, .contact-container, .about-container, .feedback-container{
+    .welcome-title,
+    .welcome-body,
+    .resource-container,
+    .contact-container,
+    .about-container,
+    .feedback-container{
         margin-left: 1.5em;
         margin-right: 1.5em;
     }
@@ -373,7 +427,7 @@ button {
     }
 
     body {
-        position: relative
+        position: relative;
     }
 
     .nav-links.active {
@@ -410,5 +464,4 @@ button {
     .contact-container a {
         color: #f96c26;
     }
-
 }
