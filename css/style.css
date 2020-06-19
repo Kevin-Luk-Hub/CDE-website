@@ -319,6 +319,7 @@ a {
 }
 
 .contact-list {
+    margin-top: 3em;
     display: flex;
     justify-content: space-evenly;
 }
@@ -494,6 +495,7 @@ a {
 
     .contact-list {
         flex-direction: column;
+        margin-top: 3em;
     }
 
     .teaching-team,
