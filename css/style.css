@@ -52,7 +52,7 @@ a {
 }
 
 .welcome-body p,
-.resource-container,
+.register-container,
 .about-container p,
 .feedback-container p {
     text-align: center;
@@ -195,11 +195,17 @@ a {
     margin-top: 2em;
 }
 
+.date-list-container p {
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
 .date-list-container ul {
     text-align: center;
     display: inline-block;
     list-style: none;
     margin: 0.5em 1em 1em 1em;
+    font-size: 1.25rem;
 }
 
 .date-list li {
@@ -207,26 +213,22 @@ a {
     font-weight: bolder;
 }
 
-/* --------------- Resources --------------- */
+/* --------------- Register --------------- */
 
-.link-container {
-    margin: 1.5em;
-    text-align: center;
+.register-container {
+    margin-bottom: 4em;
 }
 
-.link-container p {
-    margin: 1em;
-    text-align: center;
+.register-container h2 {
+    margin-top: 1.5em;
 }
 
-.html-link,
-.css-link {
-    color: rgba(0, 49, 227, 1);
+.registration-fees a {
     font-weight: bolder;
+    color: rgba(0, 49, 227, 1);
 }
 
-.html-link:hover,
-.css-link:hover {
+.registration-fees a:hover {
     transition: all 0.3s ease 0s;
     color: rgba(0, 49, 227, 0.7);
 }
@@ -243,26 +245,26 @@ a {
 }
 
 .about-logo-container {
-    margin-top: 1em;
-    margin-bottom: 6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .html-logo {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
 }
 
 .css-logo {
-    width: 115px;
-    height: 160px;
+    width: 92px;
+    height: 127px;
 }
 
 .github-logo {
-    width: 125px;
-    height: 125px;
+    width: 110px;
+    height: 110px;
 }
 
 /* --------------- Feedback --------------- */
@@ -320,7 +322,7 @@ a {
 @media (max-width: 1920px) {
     .welcome-title,
     .welcome-body,
-    .resource-container,
+    .register-container,
     .contact-container,
     .about-container,
     .feedback-container {
@@ -332,7 +334,7 @@ a {
 @media (max-width: 1440px) {
     .welcome-title,
     .welcome-body,
-    .resource-container,
+    .register-container,
     .contact-container,
     .about-container,
     .feedback-container {
@@ -344,7 +346,7 @@ a {
 @media (max-width: 1024px) {
     .welcome-title,
     .welcome-body,
-    .resource-container,
+    .register-container,
     .contact-container,
     .about-container,
     .feedback-container {
@@ -374,7 +376,7 @@ a {
 
     .welcome-title,
     .welcome-body,
-    .resource-container,
+    .register-container,
     .about-container,
     .feedback-container {
         margin-left: 1.5em;
@@ -458,8 +460,8 @@ a {
     }
 
     .about-logo-container {
-        margin-top: 1em;
-        margin-bottom: 5em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     .feedback-container a {
@@ -468,5 +470,13 @@ a {
 
     .contact-container a {
         color: #f96c26;
+    }
+
+    .date-list-container ul {
+        text-align: center;
+        display: inline-block;
+        list-style: none;
+        margin: 0.5em 0em 1em 0em;
+        font-size: 1.25rem;
     }
 }
