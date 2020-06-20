@@ -230,16 +230,6 @@ a {
     margin-top: 1.5em;
 }
 
-.registration-fees a {
-    font-weight: bolder;
-    color: rgba(0, 49, 227, 1);
-}
-
-.registration-fees a:hover {
-    transition: all 0.3s ease 0s;
-    color: rgba(0, 49, 227, 0.7);
-}
-
 .course-dates-container {
     text-align: center;
     margin-top: 0em;
@@ -261,6 +251,30 @@ a {
 .course-date-list li {
     margin: 0.25em;
     font-weight: bolder;
+}
+
+.registration-fees a {
+    font-weight: bolder;
+    color: rgba(0, 49, 227, 1);
+}
+
+.registration-fees a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgba(0, 49, 227, 0.7);
+}
+
+.registration-fees p {
+    margin-bottom: 1em;
+}
+
+.registration-refund a {
+    font-weight: bolder;
+    color: rgba(0, 49, 227, 1);
+}
+
+.registration-refund a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgba(0, 49, 227, 0.7);
 }
 
 /* --------------- About --------------- */
@@ -391,11 +405,15 @@ a {
     .welcome-title,
     .welcome-body,
     .register-container,
-    .contact-container,
     .about-container,
     .feedback-container {
         margin-left: 7.5em;
         margin-right: 7.5em;
+    }
+
+    .contact-container {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
     }
 
     html {
@@ -444,6 +462,22 @@ a {
     .teaching-team,
     .professor-section {
         margin-bottom: 2em;
+    }
+
+    .welcome-title a {
+        color: #f96c26;
+    }
+
+    .circle-project {
+        color: #f96c26;
+    }
+
+    .feedback-container a {
+        color: #f96c26;
+    }
+
+    .contact-container a {
+        color: #f96c26;
     }
 }
 
