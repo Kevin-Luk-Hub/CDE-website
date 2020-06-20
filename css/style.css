@@ -233,6 +233,29 @@ a {
     color: rgba(0, 49, 227, 0.7);
 }
 
+.course-dates-container {
+    text-align: center;
+    margin-top: 0em;
+}
+
+.course-dates-container p {
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.course-dates-container ul {
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    margin: 0.25em 0.5em 0em 0.5em;
+    font-size: 1rem;
+}
+
+.course-date-list li {
+    margin: 0.25em;
+    font-weight: bolder;
+}
+
 /* --------------- About --------------- */
 
 .about-container {
@@ -474,7 +497,7 @@ a {
 
     .about-logo-container {
         margin-top: 3em;
-        margin-bottom: 3em;
+        margin-bottom: 8em;
     }
 
     .feedback-container a {
