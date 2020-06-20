@@ -164,18 +164,13 @@ a {
     height: 240px;
 }
 
+.welcome-body {
+    margin-bottom: 2em;
+}
+
 .welcome-body p {
     text-align: center;
     font-size: 1.1rem;
-}
-
-.circle-project {
-    font-weight: 900;
-}
-
-.circle-project:hover {
-    transition: all 0.3s ease 0s;
-    color: #f96c26;
 }
 
 .welcome-body h2 {
@@ -190,6 +185,18 @@ a {
     font-size: 1.125rem;
 }
 
+.circle-project {
+    font-weight: 900;
+}
+
+.class-description {
+    margin-top: 1em;
+}
+
+.circle-project:hover {
+    transition: all 0.3s ease 0s;
+    color: #f96c26;
+}
 .date-list-container {
     text-align: center;
     margin-top: 2em;
@@ -216,7 +223,7 @@ a {
 /* --------------- Register --------------- */
 
 .register-container {
-    margin-bottom: 4em;
+    margin-bottom: 7em;
 }
 
 .register-container h2 {
@@ -318,7 +325,7 @@ a {
 
 .contact-container {
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 7em;
 }
 
 .contact-container h1 {
@@ -363,8 +370,8 @@ a {
     .contact-container,
     .about-container,
     .feedback-container {
-        margin-left: 20em;
-        margin-right: 20em;
+        margin-left: 30em;
+        margin-right: 30em;
     }
 }
 
@@ -375,8 +382,8 @@ a {
     .contact-container,
     .about-container,
     .feedback-container {
-        margin-left: 7.5em;
-        margin-right: 7.5em;
+        margin-left: 13em;
+        margin-right: 13em;
     }
 }
 
@@ -387,8 +394,56 @@ a {
     .contact-container,
     .about-container,
     .feedback-container {
-        margin-left: 4.5em;
-        margin-right: 4.5em;
+        margin-left: 7.5em;
+        margin-right: 7.5em;
+    }
+
+    html {
+        font-size: 120%;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2em;
+        border-bottom: 2px solid #d6d6d6;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-animation: slideDown 0.85s ease;
+        animation: slideDown 0.85s ease;
+    }
+
+    .contact-list {
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    .teaching-team,
+    .professor-section {
+        margin-bottom: 2em;
     }
 }
 
@@ -525,5 +580,9 @@ a {
     .teaching-team,
     .professor-section {
         margin-bottom: 2em;
+    }
+
+    .welcome-body {
+        margin-bottom: 0em;
     }
 }
