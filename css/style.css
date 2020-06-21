@@ -133,7 +133,7 @@ a {
 
 /* --------------- Home --------------- */
 
-.welcome-title {
+.welcome-container {
     text-align: center;
 }
 
@@ -142,22 +142,16 @@ a {
 }
 
 .welcome-title h3 {
-    text-align: center;
     margin-bottom: 0.5em;
 }
 
 .welcome-title a {
-    text-align: center;
     font-size: 1.55rem;
 }
 
 .welcome-title a:hover {
     transition: all 0.3s ease 0s;
     color: #f96c26;
-}
-
-.girl-logo-container {
-    text-align: center;
 }
 
 .girl-logo {
@@ -170,7 +164,6 @@ a {
 }
 
 .welcome-body p {
-    text-align: center;
     font-size: 1.1rem;
 }
 
@@ -402,8 +395,7 @@ a {
 }
 
 @media (max-width: 1920px) {
-    .welcome-title,
-    .welcome-body,
+    .welcome-container,
     .register-container,
     .contact-container,
     .about-container,
@@ -411,11 +403,15 @@ a {
         margin-left: 30em;
         margin-right: 30em;
     }
+
+    .nav-bar {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
 }
 
 @media (max-width: 1440px) {
-    .welcome-title,
-    .welcome-body,
+    .welcome-container,
     .register-container,
     .contact-container,
     .about-container,
@@ -423,11 +419,15 @@ a {
         margin-left: 13em;
         margin-right: 13em;
     }
+
+    .nav-bar {
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+    }
 }
 
 @media (max-width: 1024px) {
-    .welcome-title,
-    .welcome-body,
+    .welcome-container,
     .register-container,
     .about-container,
     .feedback-container {
@@ -506,13 +506,12 @@ a {
 }
 
 @media (max-width: 780px) {
-    .welcome-title,
-    .welcome-body,
+    .welcome-container,
     .register-container,
     .about-container,
     .feedback-container {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 3em;
+        margin-right: 3em;
     }
 
     .welcome-title a {
