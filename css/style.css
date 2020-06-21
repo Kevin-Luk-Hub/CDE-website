@@ -624,4 +624,8 @@ a {
     .welcome-body {
         margin-bottom: 0em;
     }
+
+    .nav-bar {
+        margin: 0;
+    }
 }
