@@ -426,7 +426,88 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1220px) {
+    .welcome-container,
+    .register-container,
+    .about-container,
+    .feedback-container {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+    .contact-container {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    html {
+        font-size: 120%;
+    }
+
+    .toggle-button {
+        display: flex;
+        top: em;
+        right: 6em;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2em;
+        border-bottom: 2px solid #d6d6d6;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-animation: slideDown 0.85s ease;
+        animation: slideDown 0.85s ease;
+    }
+
+    .contact-list {
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    .teaching-team,
+    .professor-section {
+        margin-bottom: 2em;
+    }
+
+    .welcome-title a {
+        color: #f96c26;
+    }
+
+    .circle-project {
+        color: #f96c26;
+    }
+
+    .feedback-container a {
+        color: #f96c26;
+    }
+
+    .contact-container a {
+        color: #f96c26;
+    }
+}
+
+@media (max-width: 992px) {
     .welcome-container,
     .register-container,
     .about-container,
@@ -510,6 +591,80 @@ a {
     .register-container,
     .about-container,
     .feedback-container {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .welcome-title a {
+        color: #f96c26;
+    }
+
+    .circle-project {
+        color: #f96c26;
+    }
+
+    .class-description {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .welcome-list {
+        margin-bottom: 3em;
+    }
+
+    .logo {
+        height: 60px;
+        width: 90px;
+    }
+
+    .girl-logo {
+        width: 235px;
+        height: 140px;
+    }
+
+    .toggle-button {
+        display: flex;
+        top: 3.5rem;
+        right: 3.5rem;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2em;
+        border-bottom: 2px solid #d6d6d6;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-animation: slideDown 0.85s ease;
+        animation: slideDown 0.85s ease;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-container,
+    .register-container,
+    .about-container,
+    .feedback-container {
         margin-left: 3em;
         margin-right: 3em;
     }
@@ -543,6 +698,8 @@ a {
 
     .toggle-button {
         display: flex;
+        top: 3.25rem;
+        right: 2.5rem;
     }
 
     .nav-links {
@@ -553,6 +710,7 @@ a {
     .nav-bar {
         flex-direction: column;
         align-items: flex-start;
+        margin: 0;
     }
 
     .nav-links ul {
@@ -623,9 +781,5 @@ a {
 
     .welcome-body {
         margin-bottom: 0em;
-    }
-
-    .nav-bar {
-        margin: 0;
     }
 }
