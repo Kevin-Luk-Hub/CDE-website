@@ -221,8 +221,14 @@ a {
     margin-bottom: 7em;
 }
 
-.register-container h2 {
-    margin-top: 0.5em;
+.course-schedule {
+    margin-top: 1em;
+}
+
+.registration-fees,
+.registration-dates,
+.registration-refund {
+    margin-top: 2em;
 }
 
 .course-dates-container {
